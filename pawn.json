@@ -1,21 +1,21 @@
 {
   "user": "username",
-  "repo": "projectname",
+  "repo": "ethereum-payments",
   "entry": "test.pwn",
   "output": "test/gamemodes/test.amx",
   "dependencies": ["Southclaws/samp-stdlib"],
   "dev_dependencies": ["pawn-lang/YSI-Includes"],
   "runtime": {
-    "plugins": ["username/projectname"]
+    "plugins": ["username/ethereum-payments"]
   },
   "resources": [
     {
-      "name": "projectname.so",
+      "name": "ethereum-payments.so",
       "archive": false,
       "platform": "linux"
     },
     {
-      "name": "projectname.dll",
+      "name": "ethereum-payments.dll",
       "archive": false,
       "platform": "windows"
     }

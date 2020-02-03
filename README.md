@@ -75,9 +75,9 @@ git submodule update
 Because this is a template, there are certain parts that use a placeholder as a project name. Do a find-and-replace
 (CTRL+Shift+F in most editors) across all files for the following:
 
-- `projectname`: your project name, should be lowercase and alphabetic only - is used in CMake project name, pawn.json
+- `ethereum-payments`: your project name, should be lowercase and alphabetic only - is used in CMake project name, pawn.json
   repo name and in test files
-- `PROJECTNAME`: your project name but all uppercase - is used in preprocessor macros for include guards
+- `ETHEREUM_PAYMENTS`: your project name but all uppercase - is used in preprocessor macros for include guards
 
 Also rename `PAWN_INCLUDE.inc` to your project's preferred include name and edit `test/gamemodes/test.pwn` for the new
 include filename.

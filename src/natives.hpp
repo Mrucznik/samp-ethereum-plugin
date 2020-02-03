@@ -4,8 +4,8 @@
 Contains all the `PAWN_NATIVE_DECL` for native function declarations.
 */
 
-#ifndef PROJECTNAME_NATIVES_H
-#define PROJECTNAME_NATIVES_H
+#ifndef ETHEREUM_PAYMENTS_NATIVES_H
+#define ETHEREUM_PAYMENTS_NATIVES_H
 
 #include <string>
 
