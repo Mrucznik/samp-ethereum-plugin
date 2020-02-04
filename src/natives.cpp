@@ -8,8 +8,9 @@ The code here acts as the translation between AMX data types and native types.
 */
 
 #include "natives.hpp"
+#include "../gosrc/ethereum-payments-plugin.h"
 
 cell Natives::MyFunction(AMX* amx, cell* params) {
-    logprintf("Hello world!");
+    logprintf("ETH Price: %.2fzl", GetCurrentETHPrice());
     return 1;
 }

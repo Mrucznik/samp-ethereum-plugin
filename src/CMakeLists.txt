@@ -20,3 +20,7 @@ add_samp_plugin(ethereum-payments
 	natives.hpp
 	plugin.def
 )
+
+add_library(ethereum-payments-plugin STATIC IMPORTED)
+target_link_libraries(ethereum-payments "${CMAKE_SOURCE_DIR}/gosrc/ethereum-payments-plugin.a")
+

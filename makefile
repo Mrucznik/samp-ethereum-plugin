@@ -32,5 +32,5 @@ build-inside:
 	cd build && cmake .. && make
 
 gobuild:
-	cd gosrc && go build -buildmode=c-archive .
+	cd gosrc && CGO_ENABLED=1 GOARCH=386 go build -buildmode=c-archive .
 

@@ -2,9 +2,9 @@ package main
 
 import (
 	"C"
+	"crypto/ecdsa"
 
 	"context"
-	"crypto/ecdsa"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -84,7 +84,7 @@ func getKeys() (string, string, string) {
 	return hexutil.Encode(privateKeyBytes)[2:], hexutil.Encode(publicKeyBytes)[4:], address
 }
 
-func main() {
+func run() {
 	client, err := ethclient.Dial("http://localhost:8545") //for prod: "https://mainnet.infura.io"
 	if err != nil {
 		log.Fatal(err)
@@ -111,4 +111,8 @@ func main() {
 	fmt.Printf("Balance ib PLN: %.2fzł\n", cast.ToFloat32(balance)*ethPrice)
 
 	fmt.Println("Bye.")
+}
+
+func main() {
+
 }
