@@ -24,9 +24,13 @@ test-container:
 
 build-container:
 	rm -rf build
-	docker build -t southclaws/ethereum-payments-build .
-	docker run -v $(shell pwd)/test/plugins:/root/test/plugins southclaws/ethereum-payments-build
+	docker build -t mrucznik/ethereum-payments-build .
+	docker run -v "$(shell pwd)/test/plugins":/root/test/plugins mrucznik/ethereum-payments-build
 
 # this make target is only run inside the container
 build-inside:
 	cd build && cmake .. && make
+
+gobuild:
+	cd gosrc && go build -buildmode=c-archive .
+

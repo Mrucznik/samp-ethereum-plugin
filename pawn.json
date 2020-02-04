@@ -1,12 +1,12 @@
 {
-  "user": "username",
+  "user": "Mrucznik",
   "repo": "ethereum-payments",
   "entry": "test.pwn",
   "output": "test/gamemodes/test.amx",
   "dependencies": ["Southclaws/samp-stdlib"],
   "dev_dependencies": ["pawn-lang/YSI-Includes"],
   "runtime": {
-    "plugins": ["username/ethereum-payments"]
+    "plugins": ["mrucznik/ethereum-payments"]
   },
   "resources": [
     {

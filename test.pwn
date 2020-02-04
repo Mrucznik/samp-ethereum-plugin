@@ -1,9 +1,12 @@
+#pragma warning disable 239
+#pragma warning disable 214
+
 #define RUN_TESTS
 
 #include <a_samp>
 #include <YSI\y_testing>
 
-#include "../../PAWN_INCLUDE.inc"
+#include "../../ethereum-payments.inc"
 
 main() {
     //

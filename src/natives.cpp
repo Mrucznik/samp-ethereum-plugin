@@ -11,5 +11,5 @@ The code here acts as the translation between AMX data types and native types.
 
 cell Natives::MyFunction(AMX* amx, cell* params) {
     logprintf("Hello world!");
-    return 0;
+    return 1;
 }

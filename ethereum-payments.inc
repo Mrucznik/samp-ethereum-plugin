@@ -1,13 +1,13 @@
 // built-in include guard removal
 // just in case the user has a local dependency with the same file name
-#if defined _inc_PAWN_INCLUDE
-	#undef _inc_PAWN_INCLUDE
+#if defined _inc_ETHEREUM_PAYMENTS
+	#undef _inc_ETHEREUM_PAYMENTS
 #endif
 // custom include-guard to ensure we don't duplicate
-#if defined _PAWN_INCLUDE_included
+#if defined _ETHEREUM_PAYMENTS_included
 	#endinput
 #endif
-#define _PAWN_INCLUDE_included
+#define _ETHEREUM_PAYMENTS_included
 
 
 // don't forget to change the above include guard to match the file name!
